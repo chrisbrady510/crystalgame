@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">     
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Crystal Collector: The Game</title>
+</head>
+<body>
+
+  <div class="row nav-title">
+
+
+    <!-- HEADER -->
+    <div class="col-md-6">
+      <div class="header text-center">
+      <!-- <h1>CRYSTAL COLLECTOR</h1> -->
+        CRYSTAL COLLECTOR
+        <button type="button" style="30px" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-info-sign"></span></button>
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <button type="button" class="close text-center" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <p>You will be given a random number at the start of the game.</p>
+              <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+              <p>You win the game by exactly matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+              <p>The value of each crystal is hidden from you until you click on it.</p>
+              <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SCOREBOARD -->
+    <div class="col-md-6 scoreboard text-center">
+      Victories: <span id="wins">0</span>
+    </div>
+
+    <!-- SCOREBOARD -->
+    <div class="col-md-6 scoreboard2 text-center">
+         Defeats: <span id="losses">0</span>
+      </div>
+
+  </div>
+
+  <div class="container">
+
+    <!-- NUMBERS -->
+
+    <div class="row text-center">
+      <div class="numberbox">
+        <div class="random-number">
+          <p>Random Number: <span id=randomNumber></span></p>
+        </div>
+        <div class="current-score">
+          <p>Your Number: <span id="currentScore">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRYSTALS -->
+    <div class="row crystals text-center">
+      <a id="green-crystal" class="hvr-pop"><img class="img-responsive" src="assets/images/greenc.png" alt="Green Crystal"></a>
+      <a id="yellow-crystal" class="hvr-pop"><img class="img-responsive" src="assets/images/yellowc.png" alt="Yellow Crystal"></a>
+      <a id="blue-crystal" class="hvr-pop"><img class="img-responsive" src="assets/images/bluec.png" alt="Blue Crystal"></a>
+      <a id="red-crystal" class="hvr-pop"><img class="img-responsive" src="assets/images/redc.png" alt="Red Crystal"></a>
+    </div>
+
+  </div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
+
